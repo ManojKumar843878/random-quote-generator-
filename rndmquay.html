@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random</title>
+    <div>
+</head><body>
+<h1>Randome Quate Checker!!!</h1>
+<h2 id ="para">result</h2>
+<button onclick="generates()">GENERATE</button>  
+</div>
+</body>
+</html>
+<script>
+    var quotes=[
+{
+quate:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium fugiat laudantium exercitationem provident dignissimos sit sequi est accusamus dolorum magnam?"
+},
+{
+quate:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vero esse voluptatum quasi doloremque temporibus cumque delectus culpa ea quidem.",
+},
+{
+quate:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus non animi quos sequi voluptas iusto! Doloribus dolorem modi magni cumque.",
+}
+];
+
+function generates(){
+var rand=Math.floor(Math.random()*quotes.length)
+
+var randquate=quotes[rand];
+
+document.getElementById("para").innerHTML=randquate.quate;}
+</script>
+<style>
+    div{
+        background-color: rgba(255, 217, 0, 0.81);
+        width:35%;
+        padding:20px;
+        margin-top:13%;
+        margin-left:30%;
+        border-radius: 5px;
+    }
+    h1{
+        text-align: center;
+        }
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+button{
+    padding:4px;
+    background-color:crimson ;
+}
+button:hover{
+    background-color: brown;
+}
+body{
+    background-color: black;
+}
+</style>
